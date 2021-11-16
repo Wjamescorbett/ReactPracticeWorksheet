@@ -2,13 +2,18 @@ import React, {Component} from 'react';
 import './App.css';
 import TitleBar from './TitleBar/TitleBar';
 import FnameLname from './FnameLnameDisplay/FnameLnameDisplay'
+import NamesList from './NamesList/NamesList';
 
 class App extends Component {
 
-        state = {
-            firstName: 'Reggie',
-            lastName: 'White'
-            };
+    state = {
+    firstName: 'Reggie',
+    lastName: 'White'
+    };
+
+    state2 = {
+    names: ['Mike', 'Nevin', 'Aaron', 'Tory', 'Kelly']
+    }
 
     constructor(props) {
         super(props);
@@ -38,7 +43,8 @@ class App extends Component {
         return(
             <div className='container-fluid'>
                 <TitleBar />
-                <FnameLname fname = {this.state[this.state.firstName]} lname = {this.state[this.state.lastName]}/>
+                <FnameLname fname = {this.state.firstName} lname = {this.state.lastName}/>
+                <NamesList names = {this.state2.names}/>
             </div>
         )
     }
@@ -50,11 +56,7 @@ export default App;
 
 
 
-//Exercise 1
-// state = {
-//     firstName: 'Reggie',
-//     lastName: 'White'
-// }
+
 
 //Exercise 2
 // state = {

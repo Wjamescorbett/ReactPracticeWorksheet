@@ -1,11 +1,11 @@
-.innerbox {
+.innerbox2 {
     background-color: grey;
     text-align: center;
     border: solid black;
     border-width: 10px;
-    height: 10em;
+    height: 25em;
 }
 
 .outterbox {
-    background-color:black ;
+    background-color:black;
 }
