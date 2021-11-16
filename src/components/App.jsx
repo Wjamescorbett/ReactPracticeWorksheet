@@ -3,6 +3,8 @@ import './App.css';
 import TitleBar from './TitleBar/TitleBar';
 import FnameLname from './FnameLnameDisplay/FnameLnameDisplay'
 import NamesList from './NamesList/NamesList';
+// import AlertUserButton from './AlertUserButton/AlertUserButton';
+
 
 class App extends Component {
 
@@ -39,13 +41,25 @@ class App extends Component {
         ];
     }
 
+    AlertUserFunction = (event) => {
+        event.preventDefault();
+        alert('devCodeCamp')
+        }
+
     render() {
         return(
-            <div className='container-fluid'>
-                <TitleBar />
-                <FnameLname fname = {this.state.firstName} lname = {this.state.lastName}/>
-                <NamesList names = {this.state2.names}/>
-            </div>
+            <form onSubmit={(event) => this.AlertUserFunction(event)}>
+                <div className='container-fluid'>
+                    <TitleBar />
+                    <FnameLname fname = {this.state.firstName} lname = {this.state.lastName}/>
+                    <NamesList names = {this.state2.names}/>
+                    <div className="outterbox">
+                        <div className="innerbox3">
+                            <button type="submit">Click Me</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         )
     }
 }
