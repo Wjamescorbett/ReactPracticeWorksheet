@@ -1,0 +1,21 @@
+.fnamelname {
+    background-color: grey;
+    text-align: center;
+    border: solid black;
+    border-width: 10px;
+}
+
+.fnamelnamedisplay {
+    background-color:black ;
+}
+
+.fname{
+    padding: 20%;
+}
+
+.lname{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50%;
+}
