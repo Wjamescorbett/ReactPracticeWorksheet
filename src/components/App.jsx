@@ -3,7 +3,7 @@ import './App.css';
 import TitleBar from './TitleBar/TitleBar';
 import FnameLname from './FnameLnameDisplay/FnameLnameDisplay'
 import NamesList from './NamesList/NamesList';
-// import AlertUserButton from './AlertUserButton/AlertUserButton';
+import SuperheroTable from './SuperheroTable/SuperheroTable';
 
 
 class App extends Component {
@@ -58,6 +58,7 @@ class App extends Component {
                             <button type="submit">Click Me</button>
                         </div>
                     </div>
+                    <SuperheroTable heros = {this.superheroes}/>
                 </div>
             </form>
         )
